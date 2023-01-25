@@ -1,41 +1,163 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  font-family: "Inter, sans-serif";
+  font-style: normal;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.outer-container {
+  width: 550px;
+  left: 664px;
+  top: 53px;
+  padding: 44px;
+  background: #23252c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.container {
+  width: 317px;
+  background: #1a1b21;
+  border-radius: 0px 0px 10px 10px;
 }
 
-.card {
-  padding: 2em;
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 21px 44px;
 }
 
-.read-the-docs {
-  color: #888;
+.photo {
+  width: 317px;
+  height: 317px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px;
+  /* margin-bottom: 21px; */
+}
+
+.photo::after {
+  content: "";
+  background: url(./assets/IMG_20221117_120211_666_3.JPG) center/100%;
+  background-position: 54% 1%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.credentials > h1 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.profession {
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 15px;
+  text-align: center;
+  margin-bottom: 8.8px;
+  color: #f3bf99;
+}
+
+.website {
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  margin-bottom: 16px;
+  color: #f5f5f5;
+}
+
+.email {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 13px 9px 40px;
+  gap: 8px;
+
+  width: 247px;
+  height: 34px;
+
+  background: #ffffff;
+
+  border: 1px solid #d1d5db;
+
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #374151;
+
+  position: relative;
+
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+
+.email::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(./assets/email-icon.svg) no-repeat 40% 50%;
+}
+
+.info p,
+.info h3 {
+  text-align: left;
+}
+
+.info h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #f5f5f5;
+}
+
+.info p {
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+
+  color: #dcdcdc;
+}
+
+.footer {
+  background: #161619;
+  border-radius: 0px 0px 10px 10px;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #374151;
 }
