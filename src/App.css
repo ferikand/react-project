@@ -42,7 +42,6 @@
   position: relative;
   overflow: hidden;
   border-radius: 10px 10px 0px 0px;
-  /* margin-bottom: 21px; */
 }
 
 .photo::after {
